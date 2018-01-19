@@ -9,7 +9,6 @@ import random#生成随机数
 import matplotlib.pyplot as plt #python 绘图模块
 import numpy as np
 
-
 '''
     旅行商问题：构造城市
 '''
@@ -17,8 +16,6 @@ import numpy as np
 num_of_city, max_value, val_list = 30, 100, []
 
 #生成城市的邻接矩阵
-#进行两层循环,首先遍历所有城市,如果行等于列的时候,就把0加入进去,如果不等于,就随机生成一个1到maxValue的值
-#这样子做的效果是生成一个numOfCity*numOfCityde的下三角矩阵,这个下三角矩阵的主对角线全为0,
 for row in range(num_of_city):
     val_list.append([ random.randint(1, max_value) for _ in range(num_of_city) ])
 for row in range(num_of_city):
