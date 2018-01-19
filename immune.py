@@ -80,8 +80,6 @@ def density(antibody, antibody_list):
 
 #根据抗体群产生抗体信息群
 def produce_antibody_info_list(antibody_list):
-    # 关键字key为affinity,关键值value为抗体的亲和力
-    # 把抗体在抗体群中的浓度赋值给抗体信息群中的浓度
     antibody_info_list = [{
             'affinity': affinity(antibody),
             'antibody': antibody,
